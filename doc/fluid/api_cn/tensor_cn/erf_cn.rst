@@ -14,17 +14,17 @@ erf
     out = \frac{2}{\sqrt{\pi}} \int_{0}^{x}e^{- \eta^{2}}d\eta
 
 参数：
-    - **x** (Tensor) - 输入的 `Tensor` ，数据类型为： float16, float32, float64。
+    - **x** (Tensor) - 输入的 `Tensor` ，数据类型为：float32, float64。
     - **name** (str，可选） - 操作的名称(可选，默认值为None）。更多信息请参见 :ref:`api_guide_Name` 。
 
 返回：
-    - Tensor，对输入x进行erf激活后的Tensor，形状、数据类型与输入 x 一致。
+    - Tensor，对输入x进行rsqrt激活后的Tensor，形状、数据类型同输入x一致。
 
 
 **代码示例**：
 
 .. code-block:: python
-
+    
     import numpy as np
     import paddle
     paddle.disable_static()
